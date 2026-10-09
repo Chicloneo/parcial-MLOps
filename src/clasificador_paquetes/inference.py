@@ -1,7 +1,7 @@
 import csv
 from pathlib import Path
 import joblib
-from .contracts import Entrada, Salida
+from clasificador_paquetes.contracts import Entrada, Salida
 import pandas as pd
 
 
