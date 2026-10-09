@@ -10,7 +10,7 @@ class Entrada(BaseModel):
     peso_kg: float = Field(gt=0, le=30)
     distancia_km: float = Field(ge=0, le=200)
 
-    @field_validator(id_paquete, mode = 'before')
+    @field_validator('id_paquete', mode = 'before')
     @classmethod
     def limpiar_id(cls, id_paquete):
         return id_paquete.strip()
